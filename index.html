@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo! </title>
+    <title>Razonamientoo Cuantitativo 1 </title>
+    <meta name="description" content="Herramienta educativa para clasificar números en conjuntos (naturales, enteros, racionales) y resolver operaciones aritmeticas con explicaciones paso a paso" 
+    <link rel="stylesheet" href="css/styles.css" 
+
 </head>
 <body>
-    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident possimus voluptatum dolorem suscipit nisi architecto eius. Nemo iusto possimus quasi veniam voluptates. Laborum voluptatem debitis repellendus esse quae quidem a.</p>
-    
+    <div class="principal">
+        <nav class="opciones-nav" role="tablist">
+            <button class="tab-btn" role="tab">
+                <span class="nav-tab-text">Conjuntos de Números</span><!--aqui creamos un boton guardando relacion con el padre -->
+               
+            </button>
+            <button class="tab-btn" role="tab">
+                <span class="nav-tab-text">Operaciones Aritmeticas</span>
+            </button>
+            <button class="tab-btn" role="tab">
+                <span class="nav-tab-text"> :D </span>
+            </button>
+        </nav>
+
+        <section id="panel-clasificar" clss="tab-panel active">
+            <div class="card">
+                <h2>Clasificador de Conjuntos de Números</h2>
+                <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a él.</p>
+            </div>
+            <input type="text" id="numero-input">
+
+            <select id="select-conjuntos"> <!--aqui estamos creando un menu de selccion-->
+                <option value="naturales">Naturales</option> 
+                <option value="enteros">Enteros</option>
+                <option value="racionales">Racionales</option>
+            </select>
+            
+        </section>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident possimus voluptatum dolorem suscipit nisi architecto eius. Nemo iusto possimus quasi veniam voluptates. Laborum voluptatem debitis repellendus esse quae quidem a.</p>
+        
+    </div>
 </body>
 </html>
