@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razonamientoo Cuantitativo 1 </title>
     <meta name="description" content="Herramienta educativa para clasificar números en conjuntos (naturales, enteros, racionales) y resolver operaciones aritmeticas con explicaciones paso a paso" 
-    <link rel="stylesheet" href="css/styles.css" 
+    <link rel="stylesheet" href="css/styles.css" >
 
 </head>
 <body>
@@ -24,20 +24,30 @@
         </nav>
 
         <section id="panel-clasificar" clss="tab-panel active">
-            <div class="card">
+            <div class="card"> <!--titulo-->
+                <div class="card-header">
                 <h2>Clasificador de Conjuntos de Números</h2>
                 <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a él.</p>
             </div>
-            <input type="text" id="numero-input">
+           
+            <div class="card-body">
+                <div class="card-object"><!--con el div encapsulamos lo que hay dentro para mejor visualizacion-->
+                    <label>Inserte el Número:</label> <!--Texto que acompaña el recuadro para que el usuario ingrese dicha informacion -->
+                    <input type="text" id="numero-input"placeholder="Ej: 1, -8, 3/4, 7.6"> <!--placeholder es para que el texto sse muestre dentro del recuadro pero no como definido sino solo visual-->
+                </div >
 
-            <select id="select-conjuntos"> <!--aqui estamos creando un menu de selccion-->
-                <option value="naturales">Naturales</option> 
-                <option value="enteros">Enteros</option>
-                <option value="racionales">Racionales</option>
-            </select>
+                <div class="card-object"><!--con el div encapsulamos lo que hay dentro para mejor visualizacion--><!--card = valor de tarjeta que mejora la visualizacion -->
+                    <select id="select-conjuntos"> <!--aqui estamos creando un menu de selccion-->
+                        <option value="">Selecciona un conjunto</option><!-- "" = se coloca para que se vea visualmente bien-->
+                        <option value="naturales">Naturales(N)</option> 
+                        <option value="enteros">Enteros(Z)</option>
+                        <option value="racionales">Racionales(Q)</option>
+                    </select>
+                </div>
+                <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button> <!--boton que aparece al lado del recuadro para enviar la información-->
+            </div>
             
         </section>
-        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident possimus voluptatum dolorem suscipit nisi architecto eius. Nemo iusto possimus quasi veniam voluptates. Laborum voluptatem debitis repellendus esse quae quidem a.</p>
         
     </div>
 </body>
